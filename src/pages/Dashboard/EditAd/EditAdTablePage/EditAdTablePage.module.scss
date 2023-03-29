@@ -1,0 +1,13 @@
+.info_text_container {
+	margin: 0.3rem 0 1.5rem 0;
+	width: 100%;
+	text-align: start;
+
+	@media screen and (min-width: 1000px) {
+		margin-bottom: 6rem;
+	}
+
+	.info_text {
+		color: rgba(94, 94, 94, 0.692);
+	}
+}

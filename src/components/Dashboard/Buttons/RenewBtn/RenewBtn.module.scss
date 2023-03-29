@@ -1,0 +1,12 @@
+@import "../../../../constants/variable";
+
+.renew_btn_icon {
+	color: $lightGray;
+	font-size: 2rem;
+	margin-left: 0.2rem;
+
+	&:hover {
+		color: $stepsLightBlue;
+		cursor: pointer;
+	}
+}

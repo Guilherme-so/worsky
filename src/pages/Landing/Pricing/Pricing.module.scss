@@ -1,0 +1,17 @@
+.pricing {
+	.mini_container {
+		p {
+			margin: 0 !important;
+		}
+	}
+
+	h1,
+	p,
+	.mini_container {
+		margin: 4rem 0;
+
+		@media screen and (min-height: 900px) {
+			margin: 6.5rem 0;
+		}
+	}
+}

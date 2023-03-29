@@ -1,0 +1,39 @@
+@import "../../../../constants/variable";
+
+.btn_blue {
+	font-size: 1.7rem;
+	padding: 0.3rem 1.7rem;
+	background: $stepsLightBlue;
+	border: none;
+	box-shadow: none;
+	color: white;
+	border-radius: 10px;
+	min-width: 10rem;
+
+	@media screen and (max-width: 1000px) {
+		width: 100%;
+	}
+
+	&:focus,
+	&:focus-visible {
+		box-shadow: none;
+	}
+
+	&:hover {
+		background: lighten($stepsLightBlue, 6);
+	}
+
+	&:active {
+		background: darken($stepsLightBlue, 10);
+		box-shadow: none;
+	}
+
+	&:disabled {
+		// background: darken($stepsLightBlue, 20);
+		cursor: no-drop;
+	}
+
+	&:disabled:hover {
+		background: $stepsLightBlue;
+	}
+}

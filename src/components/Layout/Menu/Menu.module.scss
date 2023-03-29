@@ -1,0 +1,63 @@
+@import "../../../constants/variable";
+
+.menu_container {
+	position: fixed;
+	left: 0;
+	top: 5%;
+	width: 70%;
+	height: 100%;
+	box-shadow: 1px 0 5px $grayShadowColor;
+	z-index: 100;
+	background: #fdfdfd;
+	padding: 0;
+	transition: all ease-out 300ms;
+
+	@media screen and (min-width: 1000px) {
+		width: 40%;
+		top: $headerSize + 1px;
+		max-width: 450px;
+	}
+
+	a:hover {
+		background: black;
+		color: $stepsLightBlue;
+	}
+
+	li {
+		display: flex;
+		align-items: center;
+		padding: 1.7rem 0 1.7rem 1.8rem;
+		color: black;
+
+		h3 {
+			margin: 0;
+		}
+
+		.icon {
+			font-size: 2.2rem;
+			margin-right: 2rem;
+		}
+
+		.icon_edit {
+			font-size: 1.7rem;
+		}
+
+		&:hover {
+			background: $lightBlueBackground;
+
+			h3 {
+				color: $stepsLightBlue;
+			}
+		}
+	}
+}
+
+.menu_open {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.menu_close {
+	transform: translateX(-100%);
+	opacity: 0;
+}

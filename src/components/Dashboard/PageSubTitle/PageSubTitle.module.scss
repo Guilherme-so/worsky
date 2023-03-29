@@ -1,0 +1,16 @@
+@import "../../../constants/variable";
+
+.sub_title {
+	text-align: start;
+	margin-bottom: 3rem;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.warning {
+	color: $inputWarningRedColor;
+}
+
+.info {
+	color: $aTagColor;
+}

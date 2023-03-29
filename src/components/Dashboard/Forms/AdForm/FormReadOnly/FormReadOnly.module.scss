@@ -1,0 +1,14 @@
+@import "../../../../../constants/variable";
+
+.read_only_input {
+	color: $editTableHeadColor;
+
+	&:focus,
+	&:focus-visible,
+	&:hover,
+	&:active {
+		border: none;
+		box-sizing: none;
+		outline: none;
+	}
+}

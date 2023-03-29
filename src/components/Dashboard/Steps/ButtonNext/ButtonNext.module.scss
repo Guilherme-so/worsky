@@ -1,0 +1,27 @@
+@import "../../../../constants/variable";
+
+.next_step_button {
+	font-size: 1.8rem;
+	padding: 0 1.7rem;
+	background: $stepsLightBlue;
+	border: none;
+	box-shadow: none;
+	width: 85%;
+
+	@media screen and (min-width: 1000px) {
+		font-size: 1.7rem;
+		width: auto;
+	}
+
+	&:focus,
+	&:hover,
+	&:focus-visible {
+		box-shadow: none;
+		background: $stepsLightBlue;
+	}
+
+	&:active {
+		background: darken($stepsLightBlue, 10);
+		box-shadow: none;
+	}
+}

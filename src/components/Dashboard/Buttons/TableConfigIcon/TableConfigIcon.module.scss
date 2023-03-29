@@ -1,0 +1,29 @@
+@import "../../../../constants/variable";
+
+.icon_container {
+	// padding: 0.9rem 0.6rem !important;
+	position: relative;
+
+	.config_icon {
+		font-size: 2rem;
+		&:hover {
+			cursor: pointer;
+			color: $stepsLightBlue;
+		}
+	}
+
+	.dropdown_config_menu {
+		top: 80%;
+		left: -200%;
+		border-radius: 2px;
+		color: darken($editTableHeadColor, 20);
+
+		.dropdown_box {
+			padding-right: 9rem;
+		}
+	}
+}
+
+.dropdown_menu {
+	@include basicDropdownStyle;
+}

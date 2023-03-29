@@ -1,0 +1,45 @@
+.row {
+	width: 100%;
+}
+
+.pay_pal,
+.btn_blue {
+	width: 100%;
+
+	@media screen and (min-width: 1000px) {
+		width: 23rem;
+	}
+}
+
+.pay_pal {
+	padding: 0;
+}
+
+.btn_blue {
+	padding-bottom: 0.2rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	width: 100%;
+
+	@media screen and (min-width: 1000px) {
+		width: 23rem;
+	}
+
+	span {
+		position: relative;
+		bottom: 0.2rem;
+	}
+}
+
+.btn_blue_icon {
+	margin-right: 1rem;
+	font-size: 2.2rem;
+}
+
+.centered_div {
+	height: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

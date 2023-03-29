@@ -1,0 +1,69 @@
+@import "../../../constants/variable";
+
+.dropdown_menu {
+	@include basicDropdownStyle;
+
+	.dropdown_box {
+		.status,
+		.icon {
+			margin-right: 0.3rem;
+		}
+	}
+
+	.loading_status_box {
+		justify-content: center;
+		position: relative;
+		left: 0.5rem;
+
+		&:hover {
+			background: #fffcfc !important;
+			cursor: default !important;
+		}
+	}
+}
+
+.status_indicator {
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.status_container {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.status {
+	$iconSize: 1.5rem;
+	width: $iconSize;
+	height: $iconSize;
+	border-radius: 100%;
+	margin-right: 0.2rem;
+}
+
+.status_off {
+	background: radial-gradient(
+		ellipse at center bottom,
+		rgb(252, 249, 243) 0%,
+		rgba(255, 220, 101, 1) 50%,
+		rgb(255, 247, 223) 97%
+	);
+}
+
+.status_on {
+	background: radial-gradient(
+		ellipse at center bottom,
+		rgb(195, 255, 200) 0%,
+		rgb(36, 253, 54) 50%,
+		rgb(195, 255, 200) 97%
+	);
+}
+
+.status_container .icon,
+.status_menu .icon {
+	font-size: 1.6rem;
+}

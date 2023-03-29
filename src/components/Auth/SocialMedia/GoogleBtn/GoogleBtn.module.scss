@@ -1,0 +1,14 @@
+@import "../../../../constants/variable";
+
+.google_btn {
+	background: $googleBtnColor;
+	border: none;
+
+	&:hover {
+		background: lighten($googleBtnColor, 1);
+	}
+
+	.icon {
+		margin-right: 1.5rem;
+	}
+}

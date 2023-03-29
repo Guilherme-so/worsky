@@ -1,0 +1,47 @@
+.method_choice_circle {
+	border-radius: 50%;
+	border: 3px solid #7e7e7e;
+	$circleSize: 2rem;
+	width: $circleSize;
+	height: $circleSize;
+	position: relative;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	.default_method {
+		position: absolute;
+		top: -12%;
+		left: 1px;
+		$signSize: 1.9em;
+		width: $signSize;
+		height: $signSize;
+		color: #2edf17;
+	}
+}
+
+.new_payment_method_container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 20%;
+	margin-bottom: 1rem;
+}
+
+.custom_dropdown {
+	@media screen and (min-width: 2300px) {
+		left: -8% !important;
+	}
+	left: -42% !important;
+	top: 80% !important;
+}
+
+.trash_icon {
+	font-size: 1.7rem;
+
+	&:hover {
+		color: #fc1e1e;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,52 @@
+.wrapper {
+	position: absolute;
+	left: 48%;
+	bottom: 45%;
+
+	.white_container {
+		background: white;
+		border-radius: 7px;
+		box-shadow: 0 3px 16px #3d3d3dd0;
+		padding: 0.5rem;
+		z-index: 5000;
+		position: relative;
+
+		.logo {
+			border: 1px solid #7e7e7ec0;
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 7px;
+			z-index: 500;
+		}
+
+		&::before {
+			content: "";
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			border-left: 18px solid #fff;
+			border-right: 9px solid transparent;
+			border-top: 9px solid #fff;
+			border-bottom: 15px solid transparent;
+			left: 38%;
+			bottom: -15%;
+			transform: rotate(-136deg);
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+		.logo {
+			width: 6rem;
+			height: 6rem;
+		}
+
+		&::before {
+			left: 40%;
+			bottom: -10%;
+			border-left: 24px solid #fff;
+			border-right: 12px solid transparent;
+			border-top: 12px solid #fff;
+			border-bottom: 20px solid transparent;
+		}
+	}
+}

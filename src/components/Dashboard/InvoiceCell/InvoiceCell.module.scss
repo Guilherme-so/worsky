@@ -1,0 +1,18 @@
+@import "../../../constants/variable";
+
+.icon {
+	font-size: 1.5rem;
+
+	&:hover {
+		cursor: pointer;
+		color: $stepsLightBlue;
+	}
+}
+
+.actions_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 0.3rem !important;
+	padding-right: 0.3rem !important;
+}

@@ -1,0 +1,25 @@
+@import "../../../constants/variable";
+
+.p_wrapper {
+	text-align: start;
+	margin-bottom: 1.5rem;
+	font-size: 1rem;
+
+	.summary_p {
+		font-weight: bold;
+		color: $grayShadowColor;
+	}
+
+	.answer_p {
+		color: $stepsLightBlue;
+		font-weight: bold;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	@media screen and (min-width: 1000px) {
+		font-size: 1.2rem;
+	}
+}

@@ -1,0 +1,17 @@
+@import "../../../../../constants/variable";
+
+.file_input {
+	@include whiteInputWIcon;
+}
+
+.input_disabled {
+	background: #e6e6e6;
+	cursor: default;
+
+	.icon {
+		&:hover {
+			color: inherit;
+			cursor: default;
+		}
+	}
+}

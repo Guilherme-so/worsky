@@ -1,0 +1,45 @@
+@import "../../constants/variable";
+
+.landing {
+	@include backgroundAboutUsPages;
+	color: $blue;
+	font-size: 1.2rem;
+	min-height: 100vh;
+	height: auto;
+	padding-bottom: 1rem;
+
+	h1 {
+		font-weight: bold;
+		font-size: 1.5rem;
+		text-align: start;
+	}
+
+	h2 {
+		font-size: 1.1rem;
+		font-weight: bold;
+		text-align: start;
+		margin-bottom: 0.1rem;
+	}
+
+	p {
+		text-align: start;
+		font-size: 1.1rem;
+		margin-bottom: 0.4rem !important;
+	}
+
+	@media screen and (min-width: 1100px) {
+		padding-bottom: 0;
+
+		h1 {
+			font-size: 2rem;
+		}
+
+		h2 {
+			font-size: 1.2rem;
+		}
+
+		p {
+			font-size: 1.2rem;
+		}
+	}
+}

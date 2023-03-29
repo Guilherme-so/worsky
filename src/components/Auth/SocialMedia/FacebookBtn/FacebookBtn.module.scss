@@ -1,0 +1,14 @@
+@import "../../../../constants/variable";
+
+.facebook_btn {
+	background: $facebookBtnColor;
+	border: none;
+
+	&:hover {
+		background: darken($facebookBtnColor, 2);
+	}
+
+	.icon {
+		margin-right: 1.5rem;
+	}
+}

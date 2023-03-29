@@ -1,0 +1,43 @@
+.auth_area {
+	height: 90%;
+}
+
+.register_area {
+	overflow-y: scroll;
+
+	form {
+		margin-top: 0.5rem !important;
+
+		input {
+			margin-top: 0.7rem !important;
+		}
+
+		.btn_blue {
+			margin-top: 0.8rem;
+		}
+	}
+
+	.custom_select {
+		text-align: start;
+		margin-top: 0.7rem !important;
+		font-size: 1rem;
+		font-weight: 400;
+		width: 100%;
+		background-color: #e7e2fc !important;
+
+		div {
+			background-color: #e7e2fc !important;
+			color: black;
+		}
+
+		@media screen and (min-width: 1100px) {
+			font-size: 1.4rem;
+		}
+	}
+
+	.link_area {
+		position: relative !important;
+		bottom: 0 !important;
+		top: 1.2rem !important;
+	}
+}

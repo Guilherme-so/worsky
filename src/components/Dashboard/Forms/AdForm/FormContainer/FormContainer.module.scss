@@ -1,0 +1,35 @@
+.page_container {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-direction: column-reverse;
+
+	.form_container {
+		width: 95%;
+		label {
+			text-align: start;
+		}
+	}
+
+	.status_container {
+		background: white;
+		position: relative;
+		padding: 0.3rem 0.6rem;
+		border-radius: 8px;
+		width: 15%;
+		margin: 0 0.75rem;
+		padding: 0.4rem 0.5rem;
+	}
+
+	@media screen and (min-width: 1000px) {
+		flex-direction: row;
+
+		.form_container {
+			width: 60%;
+		}
+
+		.status_container {
+			width: 8%;
+		}
+	}
+}

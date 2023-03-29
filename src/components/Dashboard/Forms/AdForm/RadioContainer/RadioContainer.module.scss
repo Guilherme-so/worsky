@@ -1,0 +1,22 @@
+.radio_container {
+	display: flex;
+	width: 100%;
+
+	@media screen and (max-width: 1000px) {
+		flex-direction: column;
+	}
+
+	.plan_label {
+		width: 35%;
+		padding-left: 12px;
+	}
+
+	.radio_btns {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+		padding: 0 0 0 0.5rem;
+		align-items: center;
+	}
+}

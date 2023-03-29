@@ -1,0 +1,34 @@
+@import "../../../constants/variable";
+
+.logo_container {
+	height: 5rem;
+	width: 8rem;
+	padding: 0.3rem 0 !important;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.align_start {
+	text-align: start !important;
+}
+
+.preview_link {
+	&:hover {
+		cursor: pointer;
+		color: $stepsLightBlue;
+	}
+}
+
+.actions_container {
+	padding: 0.9rem 0.6rem !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.expired_text {
+	color: red !important;
+	font-weight: bold;
+}

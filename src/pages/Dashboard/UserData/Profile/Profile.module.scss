@@ -1,0 +1,107 @@
+@import "../../../../constants/variable";
+
+.profile_img_container {
+	width: 100%;
+	height: 20rem;
+	margin-bottom: 2.5rem;
+
+	.profile_img {
+		height: 100%;
+		width: 95%;
+		border: 5px solid $stepsLightBlue;
+		border-radius: 20px;
+		overflow: hidden;
+		position: relative;
+		padding: 0.1rem;
+
+		@media screen and (min-width: 1000px) {
+			width: 20rem;
+		}
+
+		.loader_container,
+		.edit_icon {
+			position: absolute;
+			bottom: 0.5rem;
+			right: 0.5rem;
+			color: $stepsLightBlue;
+		}
+
+		.edit_icon {
+			font-size: 2rem;
+
+			&:hover {
+				cursor: pointer;
+				color: darken($stepsLightBlue, 10);
+			}
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.form {
+	width: 100%;
+	padding-bottom: 3%;
+
+	.flex_container {
+		display: flex;
+
+		@media screen and (max-width: 1000px) {
+			flex-direction: column;
+		}
+
+		.profile_text_input {
+			flex-wrap: wrap;
+			display: flex;
+		}
+	}
+
+	label {
+		text-align: start;
+	}
+
+	.error_text {
+		color: $inputWarningRedColor;
+		font-weight: bold;
+	}
+
+	.error_input {
+		box-shadow: 0 0 3px 1px rgb(255, 4, 4);
+	}
+
+	.area_container {
+		position: relative;
+		width: 90%;
+		height: auto;
+
+		@media screen and (min-width: 1000px) {
+			width: 80%;
+		}
+	}
+
+	.warn_icon {
+		position: absolute;
+		top: 0.4rem;
+		right: 0.5rem;
+		font-size: 1.4rem;
+		color: $inputWarningRedColor;
+	}
+
+	.label {
+		position: relative;
+		bottom: 0.2rem;
+	}
+
+	.submit_container {
+		display: flex;
+		justify-content: flex-end;
+		width: 95%;
+
+		@media screen and (min-width: 1000px) {
+			width: 80%;
+		}
+	}
+}

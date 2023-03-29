@@ -1,0 +1,102 @@
+$blue: #0d47a1;
+$darkBlue: #002171;
+$lightBlue: #5472d3;
+$aTagColor: #0d6efd;
+$stepsLightBlue: rgb(13, 186, 230);
+$lightGray: rgba(128, 128, 128, 0.753);
+$lightGreenShadow: rgba(32, 178, 171, 0.452);
+$lightBlueBackground: rgb(189, 242, 255);
+$grayShadowColor: rgb(73, 73, 73);
+$editTableHeadColor: #636363;
+$inputWarningRedColor: rgba(250, 0, 0, 0.678);
+
+$googleBtnColor: #4285f4;
+$facebookBtnColor: #4267b2;
+
+$headerSize: 55px;
+
+@mixin backgroundFullScreen {
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@mixin backgroundAboutUsPages {
+	@include backgroundFullScreen;
+	background-image: url("../assets/images/fundo.jpg");
+	padding: 25% 4% 0 4%;
+
+	@media screen and (min-width: 1100px) {
+		padding: 6% 15% 0 15%;
+	}
+}
+
+@mixin lightBlueBorder {
+	border: 2px solid $stepsLightBlue;
+}
+
+@mixin lightBlueInputBox {
+	$inputPadding: 0.7rem;
+	padding-top: $inputPadding;
+	padding-bottom: $inputPadding;
+	border-radius: 5px;
+	@include lightBlueBorder;
+
+	&:focus {
+		box-shadow: 0 0 0 4px $lightGreenShadow;
+	}
+}
+
+@mixin whiteInputWIcon {
+	background: white;
+	padding: 0 1rem !important;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ced4da;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.icon {
+		font-size: 2rem;
+
+		&:hover {
+			color: $stepsLightBlue;
+			cursor: pointer;
+		}
+	}
+}
+
+@mixin basicDropdownStyle {
+	box-shadow: 0 -1px 3px rgb(165, 165, 165);
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background: #fffcfc;
+	z-index: 100;
+	border-radius: 8px;
+	overflow: hidden;
+
+	.dropdown_box {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding: 0.6rem 2rem 0.7rem 0.7rem;
+
+		&:hover {
+			cursor: pointer;
+			background: $stepsLightBlue;
+		}
+	}
+
+	.dropdown_box:first-child {
+		border-bottom: 1px solid #e0e0e0;
+	}
+}

@@ -1,0 +1,47 @@
+@import "../../../constants/variable";
+.terms_container {
+	padding: 0 5%;
+	text-align: justify;
+	color: $darkBlue;
+
+	.welcome {
+		font-size: 1.4rem;
+		font-weight: bold;
+	}
+
+	h4 {
+		margin-bottom: 0.2rem;
+		font-size: 1rem;
+		font-weight: bold;
+		margin-top: 2rem;
+	}
+
+	.footer {
+		color: #979797bd;
+	}
+
+	p {
+		font-size: 0.8rem;
+		margin-bottom: 0.7rem;
+
+		strong {
+			margin-right: 0.3rem;
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+		.welcome {
+			font-size: 1.8rem;
+		}
+
+		padding: 0 10%;
+
+		h4 {
+			font-size: 1.2rem;
+		}
+
+		p {
+			font-size: 1rem;
+		}
+	}
+}

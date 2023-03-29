@@ -1,0 +1,279 @@
+@import "../../../../constants/variable";
+
+.cellphone_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 380px;
+
+	@media screen and (min-width: 1000px) {
+		padding: 0;
+		height: 100%;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.cellphone {
+		width: 50%;
+		height: 95%;
+		position: relative;
+
+		@media screen and (min-width: 1000px) {
+			width: 52%;
+		}
+
+		@media screen and (min-height: 660px) and (min-width: 1000px) {
+			width: 60%;
+			height: 90%;
+		}
+
+		.cellphone_background {
+			position: absolute;
+			bottom: 0.5rem;
+			width: 88%;
+			left: 6%;
+			z-index: -1;
+			height: 75%;
+			border-radius: 0 0 20px 20px;
+			overflow: hidden;
+			background: #d8d8d8;
+
+			@media screen and (min-width: 1000px) {
+				bottom: 0.8rem;
+			}
+
+			@media screen and (min-height: 720px) and (min-width: 1000px) {
+				bottom: 1.1rem;
+			}
+		}
+
+		.display {
+			background: $blue;
+			position: absolute;
+			top: 0.4rem;
+			z-index: -1;
+			left: 6%;
+			height: 30%;
+			width: 88%;
+			border-radius: 20px 20px 0 0;
+
+			@media screen and (min-width: 1000px) {
+				top: 0.8rem;
+				height: 25%;
+			}
+
+			@media screen and (min-height: 650px) and (min-width: 1000px) {
+				top: 1rem;
+			}
+
+			.text_container {
+				color: white;
+				height: 94%;
+				width: 70%;
+				overflow: hidden;
+				padding: 0 0 0 0.5rem;
+
+				@media screen and (min-width: 1000px) {
+					height: 82%;
+				}
+
+				@media screen and (min-height: 800px) and (min-width: 1000px) {
+					padding: 0.5rem 0 0.5rem 0.5rem;
+				}
+
+				h2,
+				p {
+					word-break: break-all;
+				}
+
+				h2 {
+					text-align: start;
+					margin-bottom: 0.2rem;
+					width: 100%;
+					font-size: 0.7rem;
+
+					@media screen and (min-width: 1000px) {
+						font-size: 1.3rem;
+					}
+
+					@media screen and (max-width: 1500px) and (min-width: 1000px) {
+						font-size: 1rem;
+					}
+				}
+
+				p {
+					margin-bottom: 0.5rem;
+					text-align: start;
+
+					font-size: 0.6rem;
+
+					@media screen and (min-width: 1000px) {
+						font-size: 0.9rem;
+					}
+
+					@media screen and (max-width: 1400px) and (min-width: 1000px) {
+						font-size: 0.7rem;
+					}
+				}
+			}
+
+			.btn_container {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				position: absolute;
+				bottom: -0.9rem;
+				left: 0;
+				color: white;
+
+				@media screen and (min-width: 1000px) {
+					bottom: -1.2rem;
+				}
+
+				.icon_container,
+				.more_details_btn {
+					border-radius: 20px;
+					background: $stepsLightBlue;
+				}
+
+				.icon_container {
+					padding: 0.1rem;
+
+					.icon {
+						font-size: 1.2rem;
+					}
+
+					@media screen and (min-width: 1000px) {
+						padding: 0.3rem;
+
+						.icon {
+							font-size: 1.5rem;
+						}
+					}
+				}
+
+				.more_details_btn {
+					font-size: 0.7rem;
+					padding: 0.2rem 0.9rem;
+
+					@media screen and (min-width: 1000px) {
+						font-size: 0.95rem;
+						padding: 0.4rem 1.1rem;
+					}
+				}
+
+				@mixin lgIconAndText {
+					.icon_container {
+						padding: 0.4rem;
+
+						.icon {
+							font-size: 1.8rem;
+						}
+					}
+
+					.more_details_btn {
+						font-size: 1.1rem;
+						padding: 0.4rem 1.5rem;
+					}
+				}
+
+				@media screen and (min-width: 1350px) {
+					@include lgIconAndText;
+				}
+
+				// @media screen and (min-height: 750px) {
+				// 	@include lgIconAndText;
+				// }
+			}
+		}
+
+		.ad_display {
+			display: flex;
+			align-items: center;
+			padding: 1.2rem 0.6rem 0.6rem 0.6rem;
+
+			@media screen and (min-width: 1000px) {
+				padding: 2rem 1.2rem 1.1rem 1.2rem;
+			}
+
+			@media screen and (max-height: 900px) and (min-width: 1000px) {
+				padding-top: 1.5rem;
+			}
+
+			@media screen and (max-height: 750px) and (min-width: 1000px) {
+				padding-top: 1rem;
+			}
+
+			.logo {
+				height: 4.5rem;
+				width: 4.5rem;
+				background: white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				@media screen and (min-width: 1000px) {
+					height: 6rem;
+					width: 6rem;
+				}
+
+				@media screen and (min-width: 1200px) {
+					height: 8rem;
+					width: 8rem;
+				}
+
+				@media screen and (max-height: 900px) and (min-width: 1000px) {
+					height: 7rem;
+					width: 7rem;
+				}
+
+				@media screen and (max-height: 800px) and (min-width: 1000px) {
+					height: 6.5rem;
+					width: 6.5rem;
+				}
+				@media screen and (max-height: 750px) and (min-width: 1000px) {
+					height: 5.5rem;
+					width: 5.5rem;
+				}
+
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+
+		.banner_display {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 5% 0 0.3rem 0;
+
+			img,
+			video {
+				width: 85%;
+				height: 80%;
+			}
+
+			@media screen and (min-width: 1500px) {
+				img,
+				video {
+					width: 80%;
+					height: 90%;
+				}
+			}
+
+			@media screen and (min-width: 1700px) {
+				img,
+				video {
+					width: 70%;
+					height: 85%;
+				}
+			}
+		}
+	}
+}

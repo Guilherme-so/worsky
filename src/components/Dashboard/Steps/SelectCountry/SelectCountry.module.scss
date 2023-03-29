@@ -1,0 +1,25 @@
+.select,
+.btn_blue {
+	width: 23rem;
+	margin-top: 2rem;
+}
+
+.select {
+	text-align: start;
+	font-size: 1.2rem;
+	font-weight: 400;
+
+	div {
+		color: black;
+	}
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.btn_blue {
+		width: 21rem;
+	}
+}

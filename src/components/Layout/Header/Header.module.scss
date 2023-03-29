@@ -1,0 +1,155 @@
+@import "../../../constants/variable";
+
+.header {
+	width: 100%;
+	background: #fdfdfd;
+	box-shadow: 0 1px 5px 0 $grayShadowColor;
+	padding: 1% 1%;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	z-index: 1000;
+	position: relative;
+
+	@media screen and (min-width: 1100px) {
+		display: flex;
+		height: $headerSize;
+		padding: 0 5%;
+	}
+
+	.left_header {
+		width: 100%;
+		display: flex;
+		height: 100%;
+
+		@media screen and (min-width: 1100px) {
+			width: 50%;
+		}
+
+		@media screen and (min-width: 1376px) {
+			padding-left: 4rem;
+		}
+
+		.header_menu {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			.menu_icon {
+				font-size: 2.2rem;
+
+				&:hover {
+					color: $stepsLightBlue;
+				}
+			}
+		}
+
+		a {
+			height: 40px;
+
+			@media screen and (min-width: 700px) {
+				height: $headerSize;
+			}
+
+			@media screen and (min-width: 1300px) {
+				height: 100%;
+			}
+
+			.header_logo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+
+				img {
+					height: 85%;
+					border-radius: 3px;
+				}
+
+				@media screen and (min-width: 1100px) {
+					margin-left: 2rem;
+					img {
+						height: 55%;
+					}
+				}
+			}
+		}
+
+		.username {
+			display: flex;
+			align-items: center;
+			margin-left: 1rem;
+
+			h3 {
+				margin: 0;
+				margin-bottom: 0.2rem;
+			}
+		}
+	}
+
+	.left_header_menu {
+		padding-left: 0;
+	}
+
+	.right_header_ads {
+		display: flex;
+		align-items: center;
+		padding-right: 3rem;
+		padding-left: 1rem;
+
+		@media screen and (min-width: 1000px) {
+			justify-content: flex-end;
+			padding-left: 0;
+		}
+
+		.manage_ads {
+			display: flex;
+			align-items: center;
+
+			.manage_text {
+				font-size: 2rem;
+				font-weight: bold;
+				color: $lightBlue;
+				margin-right: 1rem;
+			}
+
+			.icon_container {
+				border-radius: 100%;
+				background: $lightBlue;
+				$size: 2.7rem;
+				width: $size;
+				height: $size;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.icon {
+					color: #fdfdfd;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+
+	.user_icon {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		&:hover {
+			cursor: pointer;
+
+			.icon {
+				color: $stepsLightBlue;
+			}
+		}
+
+		.icon {
+			font-size: 2rem;
+		}
+	}
+}

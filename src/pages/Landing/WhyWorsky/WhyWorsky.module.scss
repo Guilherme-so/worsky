@@ -1,0 +1,49 @@
+.why_worsky {
+	h1 {
+		margin: 1rem 0;
+
+		@media screen and (min-width: 1100px) {
+			margin: 2rem 0;
+		}
+
+		@media screen and (min-height: 900px) {
+			margin: 4.8rem 0;
+		}
+	}
+
+	p {
+		width: 100%;
+
+		@media screen and (min-width: 1100px) {
+			width: 80%;
+		}
+	}
+
+	@media screen and (max-width: 1100px) {
+		ul {
+			font-size: 1.1rem;
+		}
+	}
+
+	.first_p {
+		p {
+			margin: 0;
+		}
+	}
+
+	.second_p {
+		margin: 1.5rem 0;
+
+		@media screen and (min-height: 900px) {
+			margin: 5rem 0;
+		}
+	}
+
+	.third_p {
+		margin-top: 1.5rem;
+
+		@media screen and (min-height: 900px) {
+			margin-top: 5rem;
+		}
+	}
+}

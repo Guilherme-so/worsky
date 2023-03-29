@@ -1,0 +1,24 @@
+@import "../../../../../constants/variable";
+
+.error_text {
+	color: $inputWarningRedColor;
+	padding-left: 0.3rem;
+	font-weight: bold;
+}
+
+.error_input {
+	box-shadow: 0 0 3px 1px rgb(255, 4, 4);
+}
+
+.warn_icon {
+	position: absolute;
+	top: 0.4rem;
+	right: 0.5rem;
+	font-size: 1.4rem;
+	color: $inputWarningRedColor;
+}
+
+.label {
+	position: relative;
+	bottom: 0.2rem;
+}

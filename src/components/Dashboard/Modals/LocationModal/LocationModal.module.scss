@@ -1,0 +1,32 @@
+.modal {
+	width: 95% !important;
+	max-width: 100% !important;
+
+	@media screen and (min-width: 1000px) {
+		width: 45% !important;
+	}
+}
+
+.modal_body {
+	.map_container {
+		height: 500px;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.inputWrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		.inputContainer {
+			width: 100%;
+		}
+	}
+
+	@media screen and (min-width: 1000px) {
+		.inputContainer {
+			width: 60%;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+@import "../../../constants/variable";
+
+.table_container {
+	min-width: 100%;
+	min-height: 70%;
+	margin-bottom: 1.5rem;
+	padding-right: 3rem;
+	overflow-x: scroll;
+
+	@media screen and (min-width: 1000px) {
+		margin-bottom: 5rem;
+	}
+
+	&::-webkit-scrollbar {
+		height: 5px;
+		position: relative;
+		right: 2px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+		height: 2px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: #878787;
+		border-radius: 15px;
+		padding-right: 0.1rem;
+	}
+
+	table {
+		min-width: 90%;
+
+		tbody {
+			background: #fdfdfd;
+		}
+
+		th {
+			padding-bottom: 1rem;
+			color: $editTableHeadColor;
+		}
+
+		tr {
+			border-bottom: 1px solid #c0c0c046;
+		}
+
+		td {
+			padding: 0.5rem 1rem;
+			text-align: center;
+			color: #7a7a7a;
+			min-width: 8rem;
+
+			@media screen and (min-width: 1000px) {
+				padding: 0.8rem 1.5rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1000px) {
+		font-size: 0.8rem;
+	}
+
+	@media screen and (min-width: 1400px) {
+		padding-right: 0;
+
+		table {
+			min-width: 100%;
+		}
+	}
+}

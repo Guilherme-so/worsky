@@ -1,0 +1,48 @@
+@import "../../../../constants/variable";
+
+.logo_container {
+	padding: 0.3rem 0 !important;
+
+	img {
+		width: 5rem;
+		height: 5rem;
+	}
+}
+
+.status_indicator {
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.status_container {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.status_container .icon,
+.status_menu .icon {
+	font-size: 1.6rem;
+}
+
+.dropdown_menu {
+	@include basicDropdownStyle;
+}
+
+.preview_link {
+	&:hover {
+		cursor: pointer;
+		color: $stepsLightBlue;
+	}
+}
+
+.actions_container {
+	padding: 0.9rem 0.6rem !important;
+	display: flex;
+	align-items: center;
+	min-height: 6rem;
+}

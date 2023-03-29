@@ -1,0 +1,11 @@
+@import "../../../constants/variable";
+
+.btn_blue {
+	background: $blue !important;
+	box-shadow: 0 0 3px rgb(37, 37, 37) !important;
+	color: #fdfdfd !important;
+
+	&:hover {
+		color: #fdfdfd;
+	}
+}
